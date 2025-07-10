@@ -195,16 +195,13 @@ python -c "from idx_normalizator import normalize_idx; print('OK')"
 
 ```bash
 # Format code
-black .
+ruff format .
 
 # Lint and fix issues
 ruff check . --fix
 
-# Type checking
-mypy .
-
 # Run all quality checks
-black . && ruff check . && mypy .
+ruff format . && ruff check .
 ```
 
 ### Testing
@@ -212,9 +209,6 @@ black . && ruff check . && mypy .
 ```bash
 # Run test suite
 pytest
-
-# Run with coverage
-pytest --cov=idx_normalizator --cov-report=html
 
 # Run specific test
 pytest tests/test_normalize.py::test_basic_normalization
@@ -295,9 +289,7 @@ class ProductSerializer(serializers.ModelSerializer):
 - **Dependencies**: 
   - `python-slugify` - Text slugification
 - **Development Tools**:
-  - `black` - Code formatting
-  - `ruff` - Linting and code analysis
-  - `mypy` - Type checking
+  - `ruff` - Code formatting, linting and analysis
   - `pytest` - Testing framework
 
 ## Architecture Decision Records

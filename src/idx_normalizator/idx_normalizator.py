@@ -58,9 +58,7 @@ def validate_sku(sku):
     for char in forbidden_chars:
         index = sku.find(char)
         if index != -1:
-            raise ValueError(
-                f'SKU contains forbidden character="{char}" sku={sku}'
-            )
+            raise ValueError(f'SKU contains forbidden character="{char}" sku={sku}')
     if len(sku) < min_len:
         raise ValueError(f"SKU must be {min_len} min chars, sku={sku}")
     if len(sku) > max_len:
