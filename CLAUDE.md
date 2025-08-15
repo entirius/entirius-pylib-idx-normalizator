@@ -231,8 +231,8 @@ class Product(models.Model):
 
 ## Related Documentation
 
-- Main project documentation: `/home/zolv/desktop/entirius/docs-entirius/`
-- Architecture Decision Records: `/home/zolv/desktop/entirius/docs-entirius/docs/adr/`
+- Main project documentation: `/home/zolv/desktop/entirius-nexus/docs/entirius-docs/`
+- Architecture Decision Records: `/home/zolv/desktop/entirius-nexus/docs/entirius-docs/docs/adr/`
 - Entirius Backend integration: `/home/zolv/desktop/entirius/services/entirius-backend/`
 - Library README: `/home/zolv/desktop/entirius/pylib/entirius-pylib-idx-normalizator/README.md`
 
